@@ -4,8 +4,9 @@
   "description": "We’d like you to create a RESTful API with a single endpoint that fetches the data in the provided MongoDB collection and return the results in the requested format.\r Requirements\r - The code should be written in Node.js using express framework\r - The endpoint should just handle HTTP POST requests.\r - The application should be deployed on AWS or Heroku. You don’t need to use any API Gateway, Load Balancers or any other layer than the developed application.\r - The up to date repo should be publicly available in Github, Bitbucket or equivalent.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ./v1/src/app.js"
+    "test": "jest tests/app.test.js",
+    "start": "node v1/src/app.js",
+    "dev": "nodemon v1/src/app.js"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,8 @@
     "mongoose": "^6.1.3"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "jest": "^27.4.5",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.1.6"
   }
 }
