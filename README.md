@@ -1,4 +1,4 @@
-#Prerequisites
+# Prerequisites
 - node
 - npm
 - .env file under the project folder with `PORT` and `DB_URI` configs like following
@@ -6,11 +6,11 @@
     PORT = 3000
     DB_URI = mongodb+srv://...?retryWrites=true
     ```
-#Run the application
+# Run the application
 - ``npm install``
 - ``npm run dev``
 
-#Run the tests
+# Run the tests
 - ``npm test``
 
 # Getir Node.js Bootcamp Graduation Project
