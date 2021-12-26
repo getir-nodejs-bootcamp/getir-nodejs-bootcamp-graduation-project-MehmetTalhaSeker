@@ -1,11 +1,11 @@
 const express = require("express");
 const config = require("./config");
 const loader = require("./loaders");
-const { RecordRoutes } = require("./api-routes");
-const notFound = require("./middlewares/notFound");
-const errorHandler = require("./middlewares/errorHandler");
+const { RecordRoutes } = require("./api_routes");
+const notFound = require("./middlewares/not_found");
+const errorHandler = require("./middlewares/error_handler");
 const cors = require("cors");
-const logger = require("./scripts/logger/requestLogger");
+const logger = require("./scripts/logger/request_logger");
 
 config();
 loader();

@@ -1,4 +1,4 @@
-const Record = require("../models/Records");
+const Record = require("../models/records");
 
 const list = (where) => {
   return Record.aggregate([

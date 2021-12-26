@@ -1,7 +1,7 @@
 const express = require("express");
-const { index } = require("../controllers/Records");
+const { index } = require("../controllers/records");
 const validate = require("../middlewares/validate");
-const RecordValidation = require("../validations/Records");
+const RecordValidation = require("../validations/records");
 
 const router = express.Router();
 

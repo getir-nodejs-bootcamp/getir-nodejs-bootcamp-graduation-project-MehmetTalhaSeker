@@ -1,4 +1,4 @@
-const { list } = require("../services/Records");
+const { list } = require("../services/records");
 const ApiError = require("../errors/ApiError");
 
 const index = (req, res, next) => {
