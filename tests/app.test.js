@@ -1,6 +1,5 @@
 const request = require("supertest");
 const app = require("../v1/src/app");
-const { connection } = require("mongoose");
 
 describe("POST /records", () => {
   describe("given startDate, endDate, minCount, maxCount", () => {
@@ -61,8 +60,4 @@ describe("POST /records", () => {
       expect(response.body.msg).toBe("'endDate' is a required field");
     });
   });
-  //TODO
-  // afterEach(async () => {
-  //   await connection.close(/*force:*/ true); // <-- important
-  // });
 });

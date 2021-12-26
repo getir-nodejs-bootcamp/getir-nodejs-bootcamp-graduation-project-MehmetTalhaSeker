@@ -1,5 +1,10 @@
 const Record = require("../models/records");
 
+/**
+ * @description Fetch records according to request from the database
+ * @param       {object} where
+ * @return      {Aggregate<Array<any>>}
+ */
 const list = (where) => {
   return Record.aggregate([
     {

@@ -1,5 +1,13 @@
 const Joi = require("joi").extend(require("@joi/date"));
 
+/**
+ * Record request validation
+ *
+ * @param {date} startDate Record start date
+ * @param {date} endDate Record end date
+ * @param {number} minCount Record min count
+ * @param {number} maxCount Record max count
+ */
 const listValidation = Joi.object({
   startDate: Joi.date().format("YYYY-MM-DD").utc().required().messages({
     "date.base": `'startDate' should be a type of 'date'`,

@@ -1,3 +1,18 @@
+#Prerequisites
+- node
+- npm
+- .env file under the project folder with `PORT` and `DB_URI` configs like following
+  - ```
+    PORT = 3000
+    DB_URI = mongodb+srv://...?retryWrites=true
+    ```
+#Run the application
+- ``npm install``
+- ``npm run dev``
+
+#Run the tests
+- ``npm test``
+
 # Getir Node.js Bootcamp Graduation Project
 ## The Challenge
 We’d like you to create a RESTful API with a single endpoint that fetches the data in the provided MongoDB collection and return the results in the requested format.
