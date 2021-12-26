@@ -8,7 +8,8 @@
     ```
 # Run the application
 - ``npm install``
-- ``npm run dev``
+- ``npm run dev`` as dev
+- ``npm start`` 
 
 # Make request to endpoint
 Endpoint: ``localhost:3000/records``
