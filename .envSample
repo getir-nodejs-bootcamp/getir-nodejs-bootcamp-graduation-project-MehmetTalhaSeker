@@ -1,2 +1,2 @@
-APP_PORT = 3000
-DB_URI =
+APP_PORT = <>
+DB_URI = <>

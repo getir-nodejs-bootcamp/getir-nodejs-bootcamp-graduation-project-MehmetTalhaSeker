@@ -1,0 +1,4 @@
+POST /records 200 534 - 176.475 ms
+POST /records 400 51 - 3.207 ms
+POST /records 400 76 - 2.701 ms
+POST /records 200 534 - 172.866 ms
