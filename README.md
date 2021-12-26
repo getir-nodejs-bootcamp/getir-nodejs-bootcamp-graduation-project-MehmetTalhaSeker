@@ -1,4 +1,4 @@
-# Prerequisites
+#Prerequisites
 - node
 - npm
 - .env file under the project folder with `PORT` and `DB_URI` configs like following
@@ -6,11 +6,46 @@
     PORT = 3000
     DB_URI = mongodb+srv://...?retryWrites=true
     ```
-# Run the application
+#Run the application
 - ``npm install``
 - ``npm run dev``
 
-# Run the tests
+# Make request to endpoint
+Endpoint: ``localhost:3000/records``
+
+###Request.body must be like as follows:
+- ```
+    {
+      "startDate":"2014-01-01",
+      "endDate":"2015-12-12",
+      "minCount": 3000,
+      "maxCount": 3002
+    }
+  ```
+- "endDate" must be greater than or equals to "startDate"
+- "maxCount" must be greater than or equals to "minCount"
+
+###Response.body will be like as follows:
+- ```
+    {
+      "code": 0,
+      "msg": "Success",
+      "records": [
+          {
+              "key": "QjqWWQpF",
+              "createdAt": "2015-05-04",
+              "totalCount": 3002
+          },
+          {
+              "key": "QjqWWQpF",
+              "createdAt": "2015-05-04",
+              "totalCount": 3002
+          }
+      ]
+   }
+  ```
+
+#Run the tests
 - ``npm test``
 
 # Getir Node.js Bootcamp Graduation Project
